@@ -84,7 +84,7 @@ public class Book {
     public static void main(String[] args) {
         String book = getBook();
         List<String> words = getWords(book);
-
+        System.out.println("Total Words: " + words.size());
         System.out.println("Most Frequent Words:");
         getFrequentWords(words, 10).forEach(entry -> System.out.println(entry.getKey() + ": " + entry.getValue()));
 

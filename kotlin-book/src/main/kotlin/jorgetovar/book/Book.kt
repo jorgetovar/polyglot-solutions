@@ -71,6 +71,7 @@ fun getLongestPalindromes(words: List<String>, takeN: Int): List<String> {
 fun main() {
     val book = getBook()
     val words = getWords(book)
+    println("Total Words: ${words.size}")
     println("Most Frequent Words:")
     println(getFrequentWords(words, 10))
     println("Longest Words Grouped by Length:")

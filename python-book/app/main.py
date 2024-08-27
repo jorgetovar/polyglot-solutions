@@ -1,3 +1,5 @@
+import unicodedata
+
 import requests
 import re
 
@@ -10,7 +12,7 @@ def get_book():
 
 
 def get_words(book):
-    return re.findall(r'[\w’]+', book)
+    return re.findall(r"[a-zA-Z0-9’]+", book)
 
 
 common_words = {
