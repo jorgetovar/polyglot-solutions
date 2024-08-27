@@ -1,9 +1,7 @@
-import unicodedata
+import re
+from collections import Counter, defaultdict
 
 import requests
-import re
-
-from collections import Counter, defaultdict
 
 
 def get_book():
