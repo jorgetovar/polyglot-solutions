@@ -56,7 +56,7 @@
 
 (defn -main
   [& args]
-  (println (str "Number of words on book:" (count words)))
+  (println (str "Total words:" (count words)))
   (println (take 10 words))
   (println (frequent-words 10))
   (println (longest-words 10))
